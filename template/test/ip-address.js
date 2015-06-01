@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var adjust = require('../');
+var {{basename}} = require('../');
 
 describe('{{classname}}', function () {
   describe('#checkIpAddress(ip)', function () {
@@ -23,7 +23,7 @@ describe('{{classname}}', function () {
         ];
 
         ips.forEach(function (ip) {
-          var res = adjust.checkIpAddress(ip);
+          var res = {{basename}}.checkIpAddress(ip);
           expect(res).to.be.false;
         });
       });
@@ -36,7 +36,7 @@ describe('{{classname}}', function () {
         ];
 
         ips.forEach(function (ip) {
-          var res = adjust.checkIpAddress(ip);
+          var res = {{basename}}.checkIpAddress(ip);
           expect(res).to.be.true;
         });
       });
