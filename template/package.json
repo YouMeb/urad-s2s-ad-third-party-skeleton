@@ -1,0 +1,19 @@
+{
+  "name": "s2s-{{basename}}-third-party",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "make eslint",
+    "test": "make test"
+  },
+  "author": "Po-Ying Chen <poying.me@gmail.com> (陳柏穎)",
+  "license": "MIT",
+  "pre-commit": [ "lint", "test" ],
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "pre-commit": "^1.0.7",
+    "urad-make-eslint": "^2.1.0"
+  }
+}
