@@ -10,6 +10,9 @@
   "author": "Po-Ying Chen <poying.me@gmail.com> (陳柏穎)",
   "license": "MIT",
   "pre-commit": [ "lint", "test" ],
+  "dependencies": {
+    "s2s-third-party": "^2.0.0"
+  },
   "devDependencies": {
     "chai": "^2.3.0",
     "mocha": "^2.2.5",
